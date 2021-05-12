@@ -8,6 +8,6 @@ PROBLEMA: Uma farmácia comercializa vários tipos de produtos. para cada produt
 ### PROJETO
 
 #### 1. DIAGRAMA DE ENTIDADE E RELACIONAMENTO
-
+![alt text](https://github.com/dijkstra001/pharm-project/blob/main/images/ER-diagram.PNG)
 #### TECNOLOGIAS UTILIZADAS
 <img alt="Postgres" src ="https://img.shields.io/badge/postgres-%23316192.svg?&style=for-the-badge&logo=postgresql&logoColor=white"/>
