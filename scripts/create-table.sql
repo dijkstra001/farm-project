@@ -18,6 +18,7 @@ create table medicos(
 
 create table clientes(
 	id serial primary key,
+	cpf varchar(11),
 	nome varchar (30) not null,
 	sobrenome varchar(200) not null,
 	logradouro varchar(200),
@@ -34,10 +35,12 @@ create table produtos(
 	nome varchar(100) not null,
 	designacao varchar(200),
 	composicao varchar(200) not null,
-	id_fabricante serial,
 	preco float,
+	id_fabricante serial,
+	id_tipo_produto serial,
 	
-	foreign key (id_fabricante) references fabricantes(id)
+	foreign key (id_fabricante) references fabricantes(id),
+	foreign key (id_tipo_produto) references tipos_produtos(id)
 );
 
 create table pedidos(
