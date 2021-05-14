@@ -45,15 +45,10 @@ create table produtos(
 
 create table pedidos(
 	id serial primary key,
-	total_venda float,
 	data Date,
 	id_cliente serial,
-	id_produto serial,
-	id_medico serial,
 	
-	foreign key (id_cliente) references clientes(id),
-	foreign key (id_produto) references produtos(id),
-	foreign key (id_medico) references medicos(id)
+	foreign key (id_cliente) references clientes(id)
 );
 
 create table produtos_pedidos(
