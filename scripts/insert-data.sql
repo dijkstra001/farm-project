@@ -7,6 +7,7 @@ truncate table clientes cascade;
 truncate table produtos cascade;
 truncate table pedidos cascade;
 truncate table produtos_pedidos cascade;
+truncate table receitas_medicas cascade;
 
 insert into tipos_produtos(id, descricao) values (1, 'COSMÉTICOS'); 
 insert into tipos_produtos(id, descricao) values (2, 'MEDICAMENTOS'); 
@@ -117,4 +118,7 @@ insert into produtos_pedidos(id, quantidade, id_produto, id_pedido) values (28, 
 insert into produtos_pedidos(id, quantidade, id_produto, id_pedido) values (29, 6, 6, 16);
 insert into produtos_pedidos(id, quantidade, id_produto, id_pedido) values (30, 6, 7, 16);
 
-
+insert into receitas_medicas(id, receita, id_produto_pedido, id_medico) values (1, 'receita_cliente.pdf', 1, 1);
+insert into receitas_medicas(id, receita, id_produto_pedido, id_medico) values (2, 'receita_cliente.pdf', 3, 2);
+insert into receitas_medicas(id, receita, id_produto_pedido, id_medico) values (3, 'receita_cliente.pdf', 4, 2);
+insert into receitas_medicas(id, receita, id_produto_pedido, id_medico) values (4, 'receita_cliente.pdf', 20, 3);
